@@ -99,13 +99,13 @@ toJavascript_re = re.compile(r'(?<!\w)(' + '|'.join(dateConversiontoJavascript.k
 
 
 BOOTSTRAP_INPUT_TEMPLATE = """
-       <div id="%(id)s" class="input-group date">
+       <div id="%(id)s_block" class="input-group date">
            %(rendered_widget)s
            %(clear_button)s
            <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
        </div>
        <script type="text/javascript">
-           $("#%(id)s").datetimepicker({%(options)s}).find('input').addClass("form-control");
+           $(document).ready(function(){$("#%(id)s_block").datetimepicker({%(options)s}).find('input').addClass("form-control");});
        </script>
        """
 
@@ -238,7 +238,7 @@ class PickerWidgetMixin(object):
 
     def _media(self):
 
-        js = ["js/bootstrap-datetimepicker.js"]
+        js = ["js/moment.js", "js/bootstrap-datetimepicker.js"]
 
         language = self.options.get('language', 'en')
         if language != 'en':
