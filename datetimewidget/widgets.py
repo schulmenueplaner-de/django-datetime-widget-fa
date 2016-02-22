@@ -98,31 +98,18 @@ dateConversiontoJavascript = {
 toJavascript_re = re.compile(r'(?<!\w)(' + '|'.join(dateConversiontoJavascript.keys()) + r')\b')
 
 
-BOOTSTRAP_INPUT_TEMPLATE = {
-    2: """
-       <div id="%(id)s"  class="controls input-append date">
-           %(rendered_widget)s
-           %(clear_button)s
-           <span class="add-on"><i class="icon-th"></i></span>
-       </div>
-       <script type="text/javascript">
-           $("#%(id)s").datetimepicker({%(options)s});
-       </script>
-       """,
-    3: """
-       <div id="%(id)s" class="input-group date">
-           %(rendered_widget)s
-           %(clear_button)s
-           <span class="input-group-addon"><span class="glyphicon %(glyphicon)s"></span></span>
-       </div>
-       <script type="text/javascript">
-           $("#%(id)s").datetimepicker({%(options)s}).find('input').addClass("form-control");
-       </script>
-       """
-       }
+BOOTSTRAP_INPUT_TEMPLATE = """
+                            <div id="%(id)s"  class="controls input-append date">
+                                %(rendered_widget)s
+                                %(clear_button)s
+                                <span class="add-on"><i class="fa fa-calendar"></i></span>
+                            </div>
+                            <script type="text/javascript">
+                                $("#%(id)s").datetimepicker({%(options)s});
+                            </script>
+                            """
 
-CLEAR_BTN_TEMPLATE = {2: """<span class="add-on"><i class="icon-remove"></i></span>""",
-                      3: """<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>"""}
+CLEAR_BTN_TEMPLATE = """<span class="input-group-addon"><span class="fa fa-trash"></span></span>"""
 
 
 quoted_options = set([
@@ -239,11 +226,11 @@ class PickerWidgetMixin(object):
         clearBtn = quote('clearBtn', self.options.get('clearBtn', 'true')) == 'true'
 
         return mark_safe(
-            BOOTSTRAP_INPUT_TEMPLATE[self.bootstrap_version]
+            BOOTSTRAP_INPUT_TEMPLATE
                 % dict(
                     id=id,
                     rendered_widget=rendered_widget,
-                    clear_button=CLEAR_BTN_TEMPLATE[self.bootstrap_version] if clearBtn else "",
+                    clear_button=CLEAR_BTN_TEMPLATE if clearBtn else "",
                     glyphicon=self.glyphicon,
                     options=js_options
                     )

@@ -3,7 +3,7 @@ __author__ = 'Alfredo Saglimbeni'
 from distutils.core import setup
 from setuptools import setup, find_packages
 
-setup(name = "django-datetime-widget",
+setup(name = "django-datetime-widget-fa",
     version = "0.9.3",
     description = "Django-datetime-widget is a simple and clean widget for DateField, Timefiled and DateTimeField  in Django framework. It is based on Bootstrap datetime picker, supports both Bootstrap 3 and Bootstrap 2",
     long_description=open('README.rst').read(),
