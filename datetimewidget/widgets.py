@@ -99,15 +99,15 @@ toJavascript_re = re.compile(r'(?<!\w)(' + '|'.join(dateConversiontoJavascript.k
 
 
 BOOTSTRAP_INPUT_TEMPLATE = """
-                            <div id="%(id)s"  class="controls input-append date">
-                                %(rendered_widget)s
-                                %(clear_button)s
-                                <span class="add-on"><i class="fa fa-calendar"></i></span>
-                            </div>
-                            <script type="text/javascript">
-                                $("#%(id)s").datetimepicker({%(options)s});
-                            </script>
-                            """
+       <div id="%(id)s" class="input-group date">
+           %(rendered_widget)s
+           %(clear_button)s
+           <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+       </div>
+       <script type="text/javascript">
+           $("#%(id)s").datetimepicker({%(options)s}).find('input').addClass("form-control");
+       </script>
+       """
 
 CLEAR_BTN_TEMPLATE = """<span class="input-group-addon"><span class="fa fa-trash"></span></span>"""
 
