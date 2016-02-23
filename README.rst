@@ -1,15 +1,15 @@
-django-datetime-widget
-======================
+django-datetime-widget-fa
+=========================
 
 .. image:: https://pypip.in/v/django-datetime-widget/badge.png
     :target: https://crate.io/packages/django-datetime-widget
 .. image:: https://pypip.in/d/django-datetime-widget/badge.png
     :target: https://crate.io/packages/django-datetime-widget
 
-``django-datetime-widget``  is a simple and clean picker widget for DateField, Timefiled and DateTimeField in Django framework. It is based on `Bootstrap datetime picker
-<https://github.com/smalot/bootstrap-datetimepicker>`_, supports both Bootstrap 3 and Bootstrap 2 .
+``django-datetime-widget-fa``  is a simple and clean picker widget for DateField, Timefiled and DateTimeField in Django framework. It is based on `Bootstrap datetime picker
+<https://github.com/smalot/bootstrap-datetimepicker>`_, supports both Bootstrap 3 and Bootstrap 2.
 
-``django-datetime-widget`` is perfect when you use a DateField, TimeField or DateTimeField in your model/form where is necessary to display the corresponding picker with a specific date/time format. Now it supports django localization.
+``django-datetime-widget-fa`` is perfect when you use a DateField, TimeField or DateTimeField in your model/form where is necessary to display the corresponding picker with a specific date/time format. Now it supports django localization.
 
 Available widgets
 -----------------
@@ -74,9 +74,9 @@ To use it, just enable the <code>showMeridian</code> property.
 Installation
 ------------
 
-#. Install django-datetime-widget using pip. For example::
+#. Install django-datetime-widget-fa using pip. For example::
 
-    pip install django-datetime-widget
+    pip install django-datetime-widget-fa
 
 #. Add  ``datetimewidget`` to your INSTALLED_APPS.
 
@@ -306,8 +306,8 @@ Contribute
 4. Send a pull request and bug the maintainer until it gets merged and published. :)
 5. Your changes will be released on the next version of django_datetime_widget!
 
-.. _`the repository`: https://github.com/asaglimbeni/django-datetime-widget
-.. _Contributor Friendly: https://github.com/asaglimbeni/django-datetime-widget/issues?direction=desc&labels=Contributor+Friendly&page=1&sort=updated&state=open
+.. _`the repository`: https://github.com/Haikson/django-datetime-widget-fa
+.. _Contributor Friendly: https://github.com/Haikson/django-datetime-widget-fa/issues?direction=desc&labels=Contributor+Friendly&page=1&sort=updated&state=open
 
 
 TODO
