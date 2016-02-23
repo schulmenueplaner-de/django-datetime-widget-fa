@@ -1,11 +1,6 @@
 django-datetime-widget-fa
 =========================
 
-.. image:: https://pypip.in/v/django-datetime-widget/badge.png
-    :target: https://crate.io/packages/django-datetime-widget
-.. image:: https://pypip.in/d/django-datetime-widget/badge.png
-    :target: https://crate.io/packages/django-datetime-widget
-
 ``django-datetime-widget-fa``  is a simple and clean picker widget for DateField, Timefiled and DateTimeField in Django framework. It is based on `Bootstrap datetime picker
 <https://github.com/smalot/bootstrap-datetimepicker>`_, supports both Bootstrap 3 and Bootstrap 2.
 
@@ -299,7 +294,7 @@ Contribute
 
 1. Check for open issues or open a fresh issue to start a discussion around a feature idea or a bug. There is a `Contributor Friendly`_ tag for issues that should be ideal for people who are not very familiar with the codebase yet.
   
-  * If you feel uncomfortable or uncertain about an issue or your changes, feel free to email @asaglimbeni and he will happily help you via email, Skype, remote pairing or whatever you are comfortable with.
+  * If you feel uncomfortable or uncertain about an issue or your changes, feel free to email @haikson and he will happily help you via email, Skype, remote pairing or whatever you are comfortable with.
 
 2. Fork develop branch from `the repository`_ on GitHub to start making your changes to the **develop** branch (or branch off of it).
 3. Please show that the bug was fixed or that the feature works as expected.
